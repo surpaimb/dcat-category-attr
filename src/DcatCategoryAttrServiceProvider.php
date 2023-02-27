@@ -31,7 +31,7 @@ class DcatCategoryAttrServiceProvider extends ServiceProvider
         }
 
         Admin::booting(function () {
-            Form::extend('catattr', SkuField::class);
+            Form::extend('catattr', CategoryAttrField::class);
         });
     }
 
