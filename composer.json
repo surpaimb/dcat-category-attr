@@ -1,0 +1,32 @@
+{
+    "name": "surpaimb/dcat-category-attr",
+    "description": "基于Dcat Admin的Attribute扩展增强版",
+    "alias": "Dcat Admin Attribute扩展增强版",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/surpaimb/dcat-category-attr",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Surpaimb",
+            "email": "surpaimb@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~1.0|~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\Extension\\DcatCategoryAttr\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Dcat\\Admin\\Extension\\DcatCategoryAttr\\DcatCategoryAttrServiceProvider",
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\Extension\\DcatCategoryAttr\\DcatCategoryAttrServiceProvider"
+            ]
+        }
+    }
+}
